@@ -81,7 +81,7 @@ def active():
             signal.alarm(10)
             try:
                 rx_mode()
-            except Exception, exc:
+            except Exception as exc:
                 print(exc)
             led_manager(L1,On)
         elif (GPIO.input(SW4)==True and GPIO.input(SW2)==False and GPIO.input(SW3)==True): #Individual Mode Tx
